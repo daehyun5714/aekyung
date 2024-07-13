@@ -1,0 +1,155 @@
+@media all and (max-width:1279px) {
+
+    * {
+        font-size: 14px;
+    }
+
+    .note {
+        display: block;
+    }
+
+    .gnb {
+        display: none;
+    }
+
+    .family_site {
+        display: none;
+    }
+
+    .menu-trigger,
+    .menu-trigger span {
+        display: inline-block;
+        transition: all 0.4s;
+        box-sizing: border-box;
+    }
+
+    .menu-trigger {
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+
+    .menu-trigger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+
+    header.active .menu-trigger span {
+        background-color: #222;
+    }
+
+    header.active2 .menu-trigger span {
+        background-color: #000;
+    }
+
+    .menu-trigger span:nth-of-type(1) {
+        top: 0;
+    }
+
+    .menu-trigger span:nth-of-type(2) {
+        top: 8.5px;
+    }
+
+    .menu-trigger span:nth-of-type(3) {
+        bottom: 0;
+    }
+
+    .menu-trigger.active-1 span:nth-of-type(1) {
+        transform: translateY(8.5px) rotate(-45deg);
+    }
+
+    .menu-trigger.active-1 span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .menu-trigger.active-1 span:nth-of-type(3) {
+        transform: translateY(-8.5px) rotate(45deg);
+    }
+
+    .search {
+        padding: 0px;
+    }
+
+    .note_tab {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        max-width: 400px;
+        height: calc(100% - 70px);
+        background-color: rgba(17, 17, 17, 0.9);
+        z-index: 9999;
+        transition: all .3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 100px 0px 100px 30px;
+    }
+
+    .note_tab.trigger {
+        right: 0;
+    }
+
+    .note_tab_gnb {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .note_tab_gnb h1 {
+        padding-bottom: 20px;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fff;
+        opacity: 0.4;
+        cursor: pointer;
+    }
+
+    .note_tab_gnb h1:hover {
+        opacity: 1;
+    }
+
+    .note_tab_gnb h1:last-child {
+        padding-bottom: 0;
+    }
+
+    .note_tab_logo img {
+        filter: invert(100%) sepia(7%) saturate(268%) hue-rotate(209deg) brightness(117%) contrast(100%);
+    }
+
+    /* header */
+
+    .sec05_left {
+        height: 400px;
+    }
+
+}
+
+/* 1280px */
+
+@media all and (max-width:1023px) {
+
+    * {
+        font-size: 12px;
+    }
+
+    .sec05_left {
+        height: 350px;
+    }
+
+    .sec05_bg img {
+        width: 70%;
+        object-fit: cover;
+        float: right;
+    }
+
+    .footer_right a {
+        margin-right: 30px;
+    }
+}
+
+/* end */

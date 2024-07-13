@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #222;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#sec02-4 {
+    padding: 150px 50px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+#sec02-4 ::before {
+    content: '';
+    width: calc(100% - 80px);
+    height: 1px;
+    background-color: rgba(0, 0, 0, .01);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+    display: block;
+}
+
+img {
+    display: block;
+    border: 0;
+}
+
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap')
